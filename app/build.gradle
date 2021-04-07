@@ -10,8 +10,8 @@ android {
         applicationId "com.douyu.ct.tool.gp"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        versionCode 110
+        versionName "1.1.0"
     }
 
     signingConfigs {
