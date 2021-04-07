@@ -10,12 +10,45 @@
         android:orientation="vertical"
         android:paddingHorizontal="20dp">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:text="置顶"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="如果你是个人游戏(App)开发者，并且你想手动互刷获得更多5星好评，请通过下面QQ群号加入组织"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="740572963"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="@android:color/black" />
+
         <EditText
             android:id="@+id/et_app_link"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginTop="50dp"
-            android:hint="在这里输入GP App链接"
+            android:text="https://play.google.com/store/apps/details?id=com.game.play.slime.diy.slimy.simulator.asmr.smash.free"
             android:textColor="@android:color/black"
             android:textColorHint="@android:color/holo_red_dark" />
 
