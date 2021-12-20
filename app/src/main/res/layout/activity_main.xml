@@ -13,7 +13,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
             android:text="置顶"
             android:textColor="@android:color/holo_red_dark"
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
-            android:text="如果你是个人游戏(App)开发者，并且你想手动互刷获得更多5星好评，请通过下面QQ群号加入组织"
+            android:text="如果你是独立Android开发者，并想获得更多5星好评，请通过下面QQ群号加入组织"
             android:textColor="@android:color/holo_red_dark"
             android:textSize="20dp" />
 
@@ -40,23 +40,23 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:background="@android:color/black" />
 
         <EditText
-            android:id="@+id/et_app_link"
+            android:id="@+id/et_pkg_name"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_marginTop="50dp"
-            android:text="https://play.google.com/store/apps/details?id=com.game.play.slime.diy.slimy.simulator.asmr.smash.free"
+            android:layout_marginTop="20dp"
+            android:text="com.top.magic.video.wallpaper.clock.wallpaper.parallax4d.live.wallpaper.free.pro"
             android:textColor="@android:color/black"
             android:textColorHint="@android:color/holo_red_dark" />
 
         <Button
             android:id="@+id/bt_to_gp_app"
-            android:layout_width="100dp"
+            android:layout_width="150dp"
             android:layout_height="50dp"
-            android:layout_marginTop="50dp"
-            android:text="跳转gp" />
+            android:layout_marginTop="20dp"
+            android:text="跳转GP详情页" />
     </LinearLayout>
 </ScrollView>

@@ -18,18 +18,21 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btToGpApp.setOnClickListener {
-            val linkString = binding.etAppLink.text.toString()
+            val pkgName = binding.etPkgName.text.toString()
             val gpPkgName = "com.android.vending"
             if (!AppUtils.isAppInstalled(gpPkgName)) {
                 ToastUtils.showShort("未安装GP")
                 return@setOnClickListener
             }
-            if (linkString.isBlank()) {
-                ToastUtils.showShort("App链接不能为空")
+            if (pkgName.isBlank()) {
+                ToastUtils.showShort("包名不能为空")
                 return@setOnClickListener
             }
-            ToastUtils.showShort("App链接: ${linkString}, 马上跳转")
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(linkString))
+            ToastUtils.showShort("包名: ${pkgName}, 马上跳转")
+            val intent = Intent(
+                Intent.ACTION_VIEW,
+                Uri.parse("https://play.google.com/store/apps/details?id=${pkgName}")
+            )
             intent.setPackage(gpPkgName)
             startActivity(intent)
         }
